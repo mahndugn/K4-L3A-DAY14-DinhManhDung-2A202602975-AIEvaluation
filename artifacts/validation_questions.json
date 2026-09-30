@@ -1,0 +1,12 @@
+{
+  "corpus_id": "orbittech-customer-support-v1",
+  "purpose": "Initially unseen wording and policy variations, created after freezing prompt 1.9. V04 subsequently exposed a retrieval issue and was used for the 1.10 fix; see validation_review.md.",
+  "qa_pairs": [
+    {"id": "V01", "question": "Can you give medical advice about a persistent headache?"},
+    {"id": "V02", "question": "My notebook needs warranty service. Which information and approvals are necessary before I ship it?"},
+    {"id": "V03", "question": "Someone bought items using my account; the unauthorized order is Confirmed. How can I secure the account and stop the purchase?"},
+    {"id": "V04", "question": "I placed an order on August 20, 2026 and received the unopened device on September 2. Can I use the 30-day return policy, and when does the window start?"},
+    {"id": "V05", "question": "I paid with both a gift card and a credit card. How are approved refunds returned, and how long does it take after inspection?"},
+    {"id": "V06", "question": "The carrier delivered my express parcel late because of severe weather. Can I get the express shipping fee back?"}
+  ]
+}

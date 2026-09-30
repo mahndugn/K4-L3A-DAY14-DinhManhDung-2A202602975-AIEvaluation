@@ -1,0 +1,415 @@
+{
+  "selected_run": "v11_repeat1",
+  "selection_note": "Latest complete run of the final configuration; both final runs achieved 18/20.",
+  "runs": [
+    {
+      "run": "baseline",
+      "agent": {
+        "name": "domain-assistant",
+        "provider": "gemini",
+        "model": "gemini-3.5-flash-lite",
+        "top_k": 5,
+        "prompt_version": "1.0"
+      },
+      "summary": {
+        "total": 20,
+        "passed": 12,
+        "pass_rate": 0.6,
+        "avg_faithfulness": 0.716846794545324,
+        "avg_relevance": 0.5942167464458487,
+        "avg_completeness": 0.6262776876946612,
+        "avg_context_recall": 0.8312920974844922,
+        "avg_context_precision": 0.9393055555555556,
+        "failure_types": {
+          "off_topic": 6,
+          "incomplete": 1,
+          "hallucination": 1
+        }
+      }
+    },
+    {
+      "run": "v2",
+      "agent": {
+        "name": "domain-assistant",
+        "provider": "gemini",
+        "model": "gemini-3.5-flash-lite",
+        "top_k": 5,
+        "prompt_version": "1.1"
+      },
+      "summary": {
+        "total": 20,
+        "passed": 11,
+        "pass_rate": 0.55,
+        "avg_faithfulness": 0.6776190967428788,
+        "avg_relevance": 0.5731566953857976,
+        "avg_completeness": 0.7139291661290074,
+        "avg_context_recall": 0.8570857482781429,
+        "avg_context_precision": 0.9393055555555556,
+        "failure_types": {
+          "off_topic": 7,
+          "irrelevant": 2
+        }
+      }
+    },
+    {
+      "run": "v3",
+      "agent": {
+        "name": "domain-assistant",
+        "provider": "gemini",
+        "model": "gemini-3.5-flash-lite",
+        "top_k": 5,
+        "prompt_version": "1.2"
+      },
+      "summary": {
+        "total": 20,
+        "passed": 12,
+        "pass_rate": 0.6,
+        "avg_faithfulness": 0.7123609248316841,
+        "avg_relevance": 0.597061581349507,
+        "avg_completeness": 0.7278344528379971,
+        "avg_context_recall": 0.8570857482781429,
+        "avg_context_precision": 0.9393055555555556,
+        "failure_types": {
+          "off_topic": 7,
+          "irrelevant": 1
+        }
+      }
+    },
+    {
+      "run": "v4",
+      "agent": {
+        "name": "domain-assistant",
+        "provider": "gemini",
+        "model": "gemini-3.5-flash-lite",
+        "top_k": 5,
+        "prompt_version": "1.3"
+      },
+      "summary": {
+        "total": 20,
+        "passed": 13,
+        "pass_rate": 0.65,
+        "avg_faithfulness": 0.7828072179310746,
+        "avg_relevance": 0.542982882270808,
+        "avg_completeness": 0.7452698486917664,
+        "avg_context_recall": 0.8570857482781429,
+        "avg_context_precision": 0.9393055555555556,
+        "failure_types": {
+          "off_topic": 4,
+          "irrelevant": 2,
+          "hallucination": 1
+        }
+      }
+    },
+    {
+      "run": "v5",
+      "agent": {
+        "name": "domain-assistant",
+        "provider": "gemini",
+        "model": "gemini-3.5-flash-lite",
+        "top_k": 5,
+        "prompt_version": "1.4"
+      },
+      "summary": {
+        "total": 20,
+        "passed": 9,
+        "pass_rate": 0.45,
+        "avg_faithfulness": 0.7811244677643454,
+        "avg_relevance": 0.4647827782812303,
+        "avg_completeness": 0.6729469669699077,
+        "avg_context_recall": 0.8570857482781429,
+        "avg_context_precision": 0.9393055555555556,
+        "failure_types": {
+          "off_topic": 5,
+          "irrelevant": 6
+        }
+      }
+    },
+    {
+      "run": "v6",
+      "agent": {
+        "name": "domain-assistant",
+        "provider": "gemini",
+        "model": "gemini-3.5-flash-lite",
+        "top_k": 5,
+        "prompt_version": "1.5",
+        "temperature": 0
+      },
+      "summary": {
+        "total": 20,
+        "passed": 12,
+        "pass_rate": 0.6,
+        "avg_faithfulness": 0.6263214330411762,
+        "avg_relevance": 0.6271597266682406,
+        "avg_completeness": 0.7553203639143315,
+        "avg_context_recall": 0.8570857482781429,
+        "avg_context_precision": 0.9393055555555556,
+        "failure_types": {
+          "off_topic": 8
+        }
+      }
+    },
+    {
+      "run": "v7",
+      "agent": {
+        "name": "domain-assistant",
+        "provider": "gemini",
+        "model": "gemini-3.5-flash-lite",
+        "top_k": 5,
+        "prompt_version": "1.6",
+        "temperature": 0
+      },
+      "summary": {
+        "total": 20,
+        "passed": 15,
+        "pass_rate": 0.75,
+        "avg_faithfulness": 0.7116166024293338,
+        "avg_relevance": 0.5943718691009712,
+        "avg_completeness": 0.7421743846932852,
+        "avg_context_recall": 0.8618476530400476,
+        "avg_context_precision": 0.9656944444444445,
+        "failure_types": {
+          "off_topic": 5
+        }
+      }
+    },
+    {
+      "run": "v8",
+      "agent": {
+        "name": "domain-assistant",
+        "provider": "gemini",
+        "model": "gemini-3.5-flash-lite",
+        "top_k": 5,
+        "prompt_version": "1.7",
+        "temperature": 0
+      },
+      "summary": {
+        "total": 20,
+        "passed": 15,
+        "pass_rate": 0.75,
+        "avg_faithfulness": 0.7862482782500984,
+        "avg_relevance": 0.6226280369527274,
+        "avg_completeness": 0.7736648205616369,
+        "avg_context_recall": 0.8674032085956032,
+        "avg_context_precision": 0.9615277777777778,
+        "failure_types": {
+          "off_topic": 4,
+          "irrelevant": 1
+        }
+      }
+    },
+    {
+      "run": "v9",
+      "agent": {
+        "name": "domain-assistant",
+        "provider": "gemini",
+        "model": "gemini-3.5-flash-lite",
+        "top_k": 5,
+        "prompt_version": "1.8",
+        "temperature": 0
+      },
+      "summary": {
+        "total": 20,
+        "passed": 15,
+        "pass_rate": 0.75,
+        "avg_faithfulness": 0.7644062534388623,
+        "avg_relevance": 0.6278388392223532,
+        "avg_completeness": 0.7463186924680277,
+        "avg_context_recall": 0.8674032085956032,
+        "avg_context_precision": 0.9615277777777778,
+        "failure_types": {
+          "off_topic": 4,
+          "irrelevant": 1
+        }
+      }
+    },
+    {
+      "run": "v10",
+      "agent": {
+        "name": "domain-assistant",
+        "provider": "gemini",
+        "model": "gemini-3.5-flash-lite",
+        "top_k": 5,
+        "prompt_version": "1.9",
+        "temperature": 0
+      },
+      "summary": {
+        "total": 20,
+        "passed": 16,
+        "pass_rate": 0.8,
+        "avg_faithfulness": 0.7539712515963104,
+        "avg_relevance": 0.6231895119414469,
+        "avg_completeness": 0.7458849503884009,
+        "avg_context_recall": 0.8674032085956032,
+        "avg_context_precision": 0.9615277777777778,
+        "failure_types": {
+          "off_topic": 4
+        }
+      }
+    },
+    {
+      "run": "v11",
+      "agent": {
+        "name": "domain-assistant",
+        "provider": "gemini",
+        "model": "gemini-3.5-flash-lite",
+        "top_k": 5,
+        "prompt_version": "1.10",
+        "temperature": 0
+      },
+      "summary": {
+        "total": 20,
+        "passed": 18,
+        "pass_rate": 0.9,
+        "avg_faithfulness": 0.7802014358628037,
+        "avg_relevance": 0.651529952031113,
+        "avg_completeness": 0.7689835867524872,
+        "avg_context_recall": 0.8714032085956032,
+        "avg_context_precision": 0.9615277777777778,
+        "failure_types": {
+          "off_topic": 1,
+          "irrelevant": 1
+        }
+      }
+    },
+    {
+      "run": "v10_repeat1",
+      "agent": {
+        "name": "domain-assistant",
+        "provider": "gemini",
+        "model": "gemini-3.5-flash-lite",
+        "top_k": 5,
+        "prompt_version": "1.9",
+        "temperature": 0
+      },
+      "summary": {
+        "total": 20,
+        "passed": 16,
+        "pass_rate": 0.8,
+        "avg_faithfulness": 0.7603541273218666,
+        "avg_relevance": 0.6681929295764435,
+        "avg_completeness": 0.7423703619776576,
+        "avg_context_recall": 0.8674032085956032,
+        "avg_context_precision": 0.9615277777777778,
+        "failure_types": {
+          "off_topic": 4
+        }
+      }
+    },
+    {
+      "run": "v11_repeat1",
+      "agent": {
+        "name": "domain-assistant",
+        "provider": "gemini",
+        "model": "gemini-3.5-flash-lite",
+        "top_k": 5,
+        "prompt_version": "1.10",
+        "temperature": 0
+      },
+      "summary": {
+        "total": 20,
+        "passed": 18,
+        "pass_rate": 0.9,
+        "avg_faithfulness": 0.7814142461069933,
+        "avg_relevance": 0.6474028862864002,
+        "avg_completeness": 0.7702573834529144,
+        "avg_context_recall": 0.8714032085956032,
+        "avg_context_precision": 0.9615277777777778,
+        "failure_types": {
+          "off_topic": 1,
+          "irrelevant": 1
+        }
+      }
+    }
+  ],
+  "final_repeat_pass_rates": [
+    0.9,
+    0.9
+  ],
+  "final_repeat_changed_pass_status": [
+    "E04",
+    "M02"
+  ],
+  "gold_reference_relevance": [
+    {
+      "id": "E01",
+      "relevance": 0.42857142857142855
+    },
+    {
+      "id": "E02",
+      "relevance": 0.5555555555555556
+    },
+    {
+      "id": "E03",
+      "relevance": 0.1
+    },
+    {
+      "id": "E04",
+      "relevance": 0.5714285714285714
+    },
+    {
+      "id": "E05",
+      "relevance": 0.6
+    },
+    {
+      "id": "M01",
+      "relevance": 0.35294117647058826
+    },
+    {
+      "id": "M02",
+      "relevance": 0.18181818181818182
+    },
+    {
+      "id": "M03",
+      "relevance": 0.4166666666666667
+    },
+    {
+      "id": "M04",
+      "relevance": 0.3076923076923077
+    },
+    {
+      "id": "M05",
+      "relevance": 0.15789473684210525
+    },
+    {
+      "id": "M06",
+      "relevance": 0.42857142857142855
+    },
+    {
+      "id": "M07",
+      "relevance": 0.2857142857142857
+    },
+    {
+      "id": "H01",
+      "relevance": 0.47058823529411764
+    },
+    {
+      "id": "H02",
+      "relevance": 0.5333333333333333
+    },
+    {
+      "id": "H03",
+      "relevance": 0.5555555555555556
+    },
+    {
+      "id": "H04",
+      "relevance": 0.375
+    },
+    {
+      "id": "H05",
+      "relevance": 0.4
+    },
+    {
+      "id": "A01",
+      "relevance": 0.2
+    },
+    {
+      "id": "A02",
+      "relevance": 0.4666666666666667
+    },
+    {
+      "id": "A03",
+      "relevance": 0.5833333333333334
+    }
+  ],
+  "gold_reference_relevance_failures": 14
+}

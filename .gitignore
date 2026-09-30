@@ -4,4 +4,5 @@ __pycache__/
 .ruff_cache/
 .venv/
 .env
+artifacts/.partial_*.json
 .DS_Store

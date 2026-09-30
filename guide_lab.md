@@ -552,7 +552,7 @@ sinh actual answers và làm Exercise 3.2.
 
 ---
 
-## 7. Cấu hình OpenAI API
+## 7. Cấu hình API sinh câu trả lời
 
 Chỉ `domain_assistant.py` cần API key.
 
@@ -573,7 +573,22 @@ Mở `.env` và điền:
 ```dotenv
 OPENAI_API_KEY=<API_KEY_CUA_BAN>
 OPENAI_MODEL=gpt-4o-mini
+GENERATOR_PROVIDER=openai
 ```
+
+Nếu dùng Gemini, giữ nguyên retrieval và evaluation core; chỉ đổi generator
+trong `.env`:
+
+```dotenv
+GENERATOR_PROVIDER=gemini
+GEMINI_API_KEY=<GEMINI_API_KEY_CUA_BAN>
+GEMINI_MODEL=gemini-3.5-flash-lite
+```
+
+Gemini dùng endpoint tương thích OpenAI nên không cần cài thêm package.
+`artifacts/actual_answers.json` ghi `agent.provider` và `agent.model` để
+phân biệt kết quả giữa hai provider. Chạy lại toàn bộ 20 câu nếu đổi provider;
+không trộn answers từ nhiều provider vào cùng một benchmark.
 
 `.env` đã nằm trong `.gitignore`. Không paste key vào source code, notebook,
 artifact, terminal screenshot hoặc commit.
@@ -609,7 +624,9 @@ Sau khi hoàn tất, mở `artifacts/actual_answers.json`. Với mỗi ID, kiể
 - `error` là `null`.
 
 Nếu run bị lỗi giữa chừng, script dừng và không ghi một artifact hoàn chỉnh giả.
-Sửa lỗi rồi chạy lại.
+Script lưu các câu đã thành công vào checkpoint ẩn trong `artifacts/` và tự tiếp
+tục từ đó khi chạy lại với cùng provider, model, dataset, corpus và `top_k`.
+Sửa lỗi rồi chạy lại; chỉ dùng `actual_answers.json` sau khi đủ 20 câu.
 
 Trong phần bắt buộc, `domain_assistant.py` và corpus là system under evaluation
 được cung cấp. Không sửa corpus, đọc expected answer trong lúc generation, hoặc
@@ -805,6 +822,7 @@ environment đã được activate.
 | Validator liệt kê nhiều field rỗng | `golden_dataset.json` vẫn là form starter | Điền đủ 20 records; đây là lỗi mong đợi trước Exercise 3.1 |
 | `text is not a verbatim substring` | Evidence đã bị sửa wording/punctuation | Copy lại nguyên văn đoạn ngắn từ đúng `source_doc` |
 | `OPENAI_API_KEY is missing from .env` | Thiếu `.env`, key còn placeholder, hoặc chạy sai directory | Copy `.env.example` thành `.env`, điền key thật và chạy từ repo root |
+| `GEMINI_API_KEY is missing from .env` | Chọn Gemini nhưng chưa điền key | Điền `GEMINI_API_KEY` và `GENERATOR_PROVIDER=gemini` trong `.env` |
 | `Dataset corpus_id ... does not match assistant corpus_id` | Đã sửa nhầm `corpus_id` | Khôi phục `orbittech-customer-support-v1` |
 | `question differs between artifacts` | Golden dataset đã đổi sau lần sinh answers | Validate rồi chạy lại `python domain_assistant.py` để tạo artifact mới |
 | `Complete the required TODOs in template.py first` | Core còn `NotImplementedError` | Quay lại checkpoint test tương ứng ở Mục 4.9 |

@@ -24,7 +24,7 @@ Tài liệu này định nghĩa 6 mốc tiến độ (Checkpoints CP0–CP5) tro
 - **Sản phẩm:**
   - Virtual environment `.venv` đã được tạo và kích hoạt.
   - Toàn bộ dependencies trong `requirements.txt` đã được cài đặt.
-  - File `.env` được tạo từ `.env.example` (điền `OPENAI_API_KEY` cho Part 3).
+  - File `.env` được tạo từ `.env.example` (điền `OPENAI_API_KEY` hoặc chọn `GENERATOR_PROVIDER=gemini` và điền `GEMINI_API_KEY` cho Part 3).
 - **Cần hiểu:**
   - Cấu trúc thư mục của repository và vai trò của từng module: `template.py` (evaluation engine) vs `domain_assistant.py` (system under evaluation).
   - Tình trạng khởi đầu của starter code: 42 tests được thu thập và 42 tests failed (do các TODO chưa được implement).

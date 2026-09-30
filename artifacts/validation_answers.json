@@ -1,0 +1,243 @@
+{
+  "schema_version": "1.0",
+  "corpus_id": "orbittech-customer-support-v1",
+  "generated_at": "2026-09-30T09:46:17.315642+00:00",
+  "agent": {
+    "name": "domain-assistant",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "top_k": 5,
+    "prompt_version": "1.9",
+    "temperature": 0
+  },
+  "answers": [
+    {
+      "id": "V01",
+      "question": "Can you give medical advice about a persistent headache?",
+      "actual_answer": "As an OrbitTech customer support assistant, I cannot provide medical diagnosis or advice for a persistent headache, as requests unrelated to OrbitTech customer support are outside my scope. I can help you with OrbitTech products, compatibility, orders, payments, promotions, shipping, returns, warranty, repairs, accounts, privacy, security, and escalation routes.",
+      "retrieved_contexts": [
+        {
+          "source_doc": "00_system_scope.md",
+          "chunk_id": "OT-00-P03",
+          "text": "Requests unrelated to OrbitTech customer support are outside scope. Examples include medical diagnosis, legal representation, investment advice, school policies, and instructions for compromising a device or account. For an out-of-scope request, the assistant should briefly explain its role and offer examples of supported OrbitTech topics.",
+          "score": 20.212873
+        },
+        {
+          "source_doc": "00_system_scope.md",
+          "chunk_id": "OT-00-P06",
+          "text": "When a policy depends on a date, the version applicable to the order or service event controls. The policy-version rules are defined in `09_escalation_and_policy_updates.md`.",
+          "score": 2.254004
+        },
+        {
+          "source_doc": "00_system_scope.md",
+          "chunk_id": "OT-00-P01",
+          "text": "The OrbitTech Customer Support Assistant provides general information from the official documents in this corpus. It may explain OrbitTech products, compatibility, orders, payments, promotions, shipping, returns, warranty, repairs, accounts, privacy, security, and escalation routes. For this educational lab, the corpus is the assistant's only authoritative source.",
+          "score": 1.847929
+        },
+        {
+          "source_doc": "00_system_scope.md",
+          "chunk_id": "OT-00-P02",
+          "text": "The assistant may describe a policy but cannot view a live order, issue a refund, approve a warranty claim, unlock an account, change a delivery address, or promise an exception. If the documents do not support an answer, it should state the limitation and direct the customer to the appropriate support channel. It must not invent a product specification, delivery status, discount, or legal right.",
+          "score": 1.624864
+        },
+        {
+          "source_doc": "00_system_scope.md",
+          "chunk_id": "OT-00-P05",
+          "text": "The assistant may provide safe, reversible troubleshooting from `07_repair_and_technical_support.md`. It must not advise customers to bypass electrical protections, open a sealed battery, disable security controls, or continue using a device that is overheating, smoking, swollen, or wet. Such a device should be powered down when safe, disconnected from charging, and escalated to support.",
+          "score": 1.462378
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "V02",
+      "question": "My notebook needs warranty service. Which information and approvals are necessary before I ship it?",
+      "actual_answer": "For your notebook warranty service, you must provide your product serial number, contact information, symptoms, and proof of purchase, and remote support may run diagnostics before authorizing shipment. Sending a device without a repair authorization can delay processing.",
+      "retrieved_contexts": [
+        {
+          "source_doc": "07_repair_and_technical_support.md",
+          "chunk_id": "OT-07-P02",
+          "text": "A repair request requires the product serial number, contact information, symptoms, and proof of purchase when warranty coverage is requested. Remote support may run diagnostics before authorizing shipment or store intake. Sending a device without a repair authorization can delay processing.",
+          "score": 28.769823
+        },
+        {
+          "source_doc": "06_warranty_policy.md",
+          "chunk_id": "OT-06-P02",
+          "text": "The warranty covers defects in materials or workmanship under normal use. Examples include a charging port that fails without physical damage, a display that develops non-impact-related lines, or a HomeHub radio that stops connecting to supported devices. A claim requires an order number or other acceptable proof of purchase. When proof is unavailable, OrbitTech may use the recorded serial-number shipment date, which can shorten the apparent coverage period.",
+          "score": 10.880522
+        },
+        {
+          "source_doc": "08_accounts_privacy_and_security.md",
+          "chunk_id": "OT-08-P04",
+          "text": "OrbitTech provides order information only to the account holder or a person with verified authorization. Knowing an order number alone is not sufficient authorization. A gift purchaser may receive their own payment receipt but not the recipient's unrelated account history. Customers may request a copy or correction of their account data through the Privacy Request form.",
+          "score": 9.513494
+        },
+        {
+          "source_doc": "02_orders_and_payments.md",
+          "chunk_id": "OT-02-P01",
+          "text": "An online order is created when OrbitTech displays an order number and sends a confirmation email. A pending card authorization is not proof that the order was accepted. OrbitTech captures payment when the order enters packing. Bank transfer orders are held for up to two business days while payment is confirmed; stock is not permanently reserved until confirmation.",
+          "score": 6.256426
+        },
+        {
+          "source_doc": "07_repair_and_technical_support.md",
+          "chunk_id": "OT-07-P04",
+          "text": "For an out-of-warranty or excluded issue, OrbitTech sends a written quote. The quote remains valid for seven calendar days. Work begins only after approval and required payment. If the customer declines, a diagnostic fee of USD 35 applies unless remote support confirmed before shipment that no diagnostic fee would be charged.",
+          "score": 5.732636
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "V03",
+      "question": "Someone bought items using my account; the unauthorized order is Confirmed. How can I secure the account and stop the purchase?",
+      "actual_answer": "Since you suspect account compromise and your unauthorized order is still `Confirmed`, you should reset the password from a trusted device, revoke active sessions, enable multi-factor authentication, and contact Account Security. Additionally, you should attempt cancellation directly from the account page while the status is `Confirmed`.",
+      "retrieved_contexts": [
+        {
+          "source_doc": "02_orders_and_payments.md",
+          "chunk_id": "OT-02-P03",
+          "text": "An order can be cancelled from the account page while its status is `Confirmed`. Once the status becomes `Packing`, cancellation is no longer guaranteed. Support may request a carrier interception, but interception fees are non-refundable and success is not guaranteed. If interception fails, the customer must use the return process after delivery.",
+          "score": 11.763738
+        },
+        {
+          "source_doc": "02_orders_and_payments.md",
+          "chunk_id": "OT-02-P05",
+          "text": "The shipping address may be edited only while an order is `Confirmed`. For security, changing the destination country is never allowed; the customer must cancel and place a new order. Tax is calculated using the final shipping or pickup location. Refund timing and deductions after a return are governed by `05_returns_and_exchanges.md`.",
+          "score": 8.555566
+        },
+        {
+          "source_doc": "08_accounts_privacy_and_security.md",
+          "chunk_id": "OT-08-P02",
+          "text": "A customer who suspects account compromise should reset the password from a trusted device, revoke active sessions, enable multi-factor authentication, and contact Account Security. If an unauthorized order is still `Confirmed`, the customer should also attempt cancellation under `02_orders_and_payments.md`. If it is already packing or dispatched, Account Security coordinates with the Payments and Delivery teams; cancellation or interception is not guaranteed.",
+          "score": 8.497856
+        },
+        {
+          "source_doc": "04_shipping_and_delivery.md",
+          "chunk_id": "OT-04-P04",
+          "text": "Visible shipping damage or missing items must be reported within 48 hours after confirmed delivery. The customer should keep the packaging and provide photographs of the label, box, and contents. A concealed defect discovered later follows the warranty or return policy rather than the shipping-damage process.",
+          "score": 5.951146
+        },
+        {
+          "source_doc": "06_warranty_policy.md",
+          "chunk_id": "OT-06-P02",
+          "text": "The warranty covers defects in materials or workmanship under normal use. Examples include a charging port that fails without physical damage, a display that develops non-impact-related lines, or a HomeHub radio that stops connecting to supported devices. A claim requires an order number or other acceptable proof of purchase. When proof is unavailable, OrbitTech may use the recorded serial-number shipment date, which can shorten the apparent coverage period.",
+          "score": 5.383524
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "V04",
+      "question": "I placed an order on August 20, 2026 and received the unopened device on September 2. Can I use the 30-day return policy, and when does the window start?",
+      "actual_answer": "For your order placed on August 20, 2026, you cannot use the 30-day return policy because Return Policy version 1.0 applies to orders placed before September 1, 2026, allowing 21 calendar days for unopened devices. The 30-day return policy and version 2.0 apply only to orders placed on or after September 1, 2026.",
+      "retrieved_contexts": [
+        {
+          "source_doc": "09_escalation_and_policy_updates.md",
+          "chunk_id": "OT-09-P04",
+          "text": "Return Policy version 1.0 applies to orders placed before September 1, 2026. It allowed 21 calendar days for unopened devices, seven calendar days for opened devices, and charged a 15% opened-device restocking fee. Return Policy version 2.0 applies to orders placed on or after September 1, 2026. It allows 30 days unopened, 14 days opened, and charges 10%. The 45-day OrbitPlus unopened-device benefit was introduced with version 2.0. Orders placed before September 1 keep the 21-day version 1.0 window regardless of membership. For version 2.0 orders, the extension applies only when OrbitPlus was active on the order date.",
+          "score": 22.631212
+        },
+        {
+          "source_doc": "05_returns_and_exchanges.md",
+          "chunk_id": "OT-05-P01",
+          "text": "For orders placed on or after September 1, 2026, an unopened standard device may be returned within 30 calendar days after confirmed delivery. An opened standard device may be returned within 14 calendar days and is subject to a 10% restocking fee. A defective device verified during the return window is not charged a restocking fee. OrbitPlus may extend only the unopened-device window as described in `03_promotions_and_membership.md`.",
+          "score": 15.614168
+        },
+        {
+          "source_doc": "03_promotions_and_membership.md",
+          "chunk_id": "OT-03-P05",
+          "text": "OrbitPlus extends the unopened-device return window from 30 to 45 calendar days for eligible purchases made while membership is active. It does not extend the 14-day opened-device window, override hygiene exclusions, or extend a product warranty. Members may receive a loaner during some covered repairs under `07_repair_and_technical_support.md`, subject to availability and a refundable deposit.",
+          "score": 9.667315
+        },
+        {
+          "source_doc": "05_returns_and_exchanges.md",
+          "chunk_id": "OT-05-P02",
+          "text": "Accessories may be returned within 30 calendar days when complete and in resalable condition. Opened ear tips, in-ear audio products, screen protectors, and other hygiene or single-use accessories are non-returnable unless defective. Gift cards, digital activation codes, personalized items, and completed services are non-returnable.",
+          "score": 4.533904
+        },
+        {
+          "source_doc": "06_warranty_policy.md",
+          "chunk_id": "OT-06-P05",
+          "text": "The warranty is separate from the return policy. A customer inside the return window may choose an eligible return; after that window, a covered defect follows the repair process in `07_repair_and_technical_support.md`. Accidental damage may still be repairable for a fee, but it is not converted into a warranty claim by purchasing OrbitPlus after the incident.",
+          "score": 3.459105
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "V05",
+      "question": "I paid with both a gift card and a credit card. How are approved refunds returned, and how long does it take after inspection?",
+      "actual_answer": "When you pay with both a gift card and a credit card, approved refunds are issued to your original payment methods within five to seven business days after inspection. The gift-card portion returns to a replacement gift card, because OrbitTech cannot refund cash for a gift-card-funded amount.",
+      "retrieved_contexts": [
+        {
+          "source_doc": "05_returns_and_exchanges.md",
+          "chunk_id": "OT-05-P05",
+          "text": "After inspection, refunds are issued to the original payment methods within five to seven business days. Gift-card portions return to a replacement gift card. Original standard-shipping fees are not refunded for preference returns. A return caused by a verified defect or OrbitTech shipping error includes a prepaid return label. Warranty service after the return window follows `06_warranty_policy.md` and `07_repair_and_technical_support.md`.",
+          "score": 11.106514
+        },
+        {
+          "source_doc": "02_orders_and_payments.md",
+          "chunk_id": "OT-02-P02",
+          "text": "Customers may pay by supported credit or debit card, OrbitTech gift card, or bank transfer. Up to two gift cards may be combined with one card payment. Promotional codes and membership benefits follow `03_promotions_and_membership.md`. OrbitTech cannot refund cash for a gift-card-funded portion; that amount returns to a replacement gift card.",
+          "score": 11.074385
+        },
+        {
+          "source_doc": "03_promotions_and_membership.md",
+          "chunk_id": "OT-03-P03",
+          "text": "Only one percentage-off promotional code may be applied to an order. A percentage code may be combined with a gift card, but not with another percentage code or a clearance markdown. A fixed-value service credit may be combined with one percentage code unless its terms say otherwise. OrbitPlus accessory discounts cannot stack with a percentage-off code; checkout applies the larger eligible discount.",
+          "score": 6.282667
+        },
+        {
+          "source_doc": "04_shipping_and_delivery.md",
+          "chunk_id": "OT-04-P03",
+          "text": "Tracking becomes available after dispatch and may take up to 24 hours to show movement. A package is considered delayed when it has no tracking update for three business days beyond the latest estimated delivery date. At that point, support may open a carrier trace. A refund or replacement is not issued while an active trace is within its five-business-day investigation period.",
+          "score": 4.756908
+        },
+        {
+          "source_doc": "07_repair_and_technical_support.md",
+          "chunk_id": "OT-07-P03",
+          "text": "Initial diagnosis normally takes up to three business days after the service centre receives the product. A covered repair normally takes up to ten additional business days when parts are available. These periods exclude shipping time and time waiting for customer approval. If a required part is unavailable for more than 15 business days, support must offer an escalation review for an alternative remedy.",
+          "score": 4.511176
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "V06",
+      "question": "The carrier delivered my express parcel late because of severe weather. Can I get the express shipping fee back?",
+      "actual_answer": "Since your express package was delivered late because of severe weather, you cannot get the express shipping fee back. Express-shipping fees are refunded when an express package arrives after the carrier's committed service date, unless the delay resulted from an incorrect address, unavailable recipient, customs hold, severe weather, or another listed carrier exception. Because your delay resulted from severe weather, this exception applies and the fee is not refundable.",
+      "retrieved_contexts": [
+        {
+          "source_doc": "04_shipping_and_delivery.md",
+          "chunk_id": "OT-04-P05",
+          "text": "If a carrier confirms loss, OrbitTech offers either a replacement, subject to stock, or a refund to the original payment methods. Express-shipping fees are refunded when an express package arrives after the carrier's committed service date, unless the delay resulted from an incorrect address, unavailable recipient, customs hold, severe weather, or another listed carrier exception. Address-change limitations are in `02_orders_and_payments.md`.",
+          "score": 16.228311
+        },
+        {
+          "source_doc": "04_shipping_and_delivery.md",
+          "chunk_id": "OT-04-P01",
+          "text": "Standard domestic shipping normally arrives in three to five business days after dispatch. Express shipping normally arrives in one to two business days after dispatch. These are service estimates, not guarantees. Orders to designated remote areas require two additional business days. Weekends and public carrier holidays are not business days.",
+          "score": 6.619424
+        },
+        {
+          "source_doc": "03_promotions_and_membership.md",
+          "chunk_id": "OT-03-P01",
+          "text": "OrbitPlus is an annual membership costing USD 49. Active members receive free standard shipping on eligible domestic orders, a 5% member discount on regularly priced OrbitTech accessories, and priority chat support. Membership does not discount devices, repair charges, gift cards, taxes, express shipping, or products already marked as clearance.",
+          "score": 5.926294
+        },
+        {
+          "source_doc": "08_accounts_privacy_and_security.md",
+          "chunk_id": "OT-08-P03",
+          "text": "Suspected card fraud should be reported to the card issuer as well as OrbitTech. OrbitTech may temporarily restrict account changes while investigating. A restriction does not prove that the account holder committed fraud. Customers should not create repeated accounts to bypass the restriction, because that can delay identity verification.",
+          "score": 3.896623
+        },
+        {
+          "source_doc": "05_returns_and_exchanges.md",
+          "chunk_id": "OT-05-P03",
+          "text": "A return requires the order number, all included parts, and removal of personal accounts and activation locks. OrbitTech may reduce a refund for missing components or physical damage not reported as a defect. Customers should back up and erase personal data before returning a device. OrbitTech is not responsible for data left on a returned product.",
+          "score": 3.231603
+        }
+      ],
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "corpus_id": "orbittech-customer-support-v1",
+  "generated_at": "2026-09-30T09:48:56.006570+00:00",
+  "agent": {
+    "name": "domain-assistant",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "top_k": 5,
+    "prompt_version": "1.10",
+    "temperature": 0
+  },
+  "answers": [
+    {
+      "id": "V04",
+      "question": "I placed an order on August 20, 2026 and received the unopened device on September 2. Can I use the 30-day return policy, and when does the window start?",
+      "actual_answer": "Because your order was placed on August 20, 2026, you cannot use the 30-day return policy and instead have a 21-calendar-day return window under Return Policy version 1.0 for your unopened device. The number of return days is counted from confirmed delivery, and orders placed before September 1 keep the 21-day version 1.0 window regardless of membership.",
+      "retrieved_contexts": [
+        {
+          "source_doc": "09_escalation_and_policy_updates.md",
+          "chunk_id": "OT-09-P04",
+          "text": "Return Policy version 1.0 applies to orders placed before September 1, 2026. It allowed 21 calendar days for unopened devices, seven calendar days for opened devices, and charged a 15% opened-device restocking fee. Return Policy version 2.0 applies to orders placed on or after September 1, 2026. It allows 30 days unopened, 14 days opened, and charges 10%. The 45-day OrbitPlus unopened-device benefit was introduced with version 2.0. Orders placed before September 1 keep the 21-day version 1.0 window regardless of membership. For version 2.0 orders, the extension applies only when OrbitPlus was active on the order date.",
+          "score": 27.061036
+        },
+        {
+          "source_doc": "09_escalation_and_policy_updates.md",
+          "chunk_id": "OT-09-P03",
+          "text": "Policy documents display a version and effective date. Unless a new version explicitly says otherwise, the version in force on the triggering event date controls. For return-policy eligibility, the triggering event is the order-placement date, while the number of return days is counted from confirmed delivery. For warranty, the coverage period begins on delivery or store collection. For repair fees, the applicable policy is the version accepted when the repair authorization is created.",
+          "score": 18.830269
+        },
+        {
+          "source_doc": "05_returns_and_exchanges.md",
+          "chunk_id": "OT-05-P01",
+          "text": "For orders placed on or after September 1, 2026, an unopened standard device may be returned within 30 calendar days after confirmed delivery. An opened standard device may be returned within 14 calendar days and is subject to a 10% restocking fee. A defective device verified during the return window is not charged a restocking fee. OrbitPlus may extend only the unopened-device window as described in `03_promotions_and_membership.md`.",
+          "score": 17.901658
+        },
+        {
+          "source_doc": "00_system_scope.md",
+          "chunk_id": "OT-00-P06",
+          "text": "When a policy depends on a date, the version applicable to the order or service event controls. The policy-version rules are defined in `09_escalation_and_policy_updates.md`.",
+          "score": 9.669188
+        },
+        {
+          "source_doc": "03_promotions_and_membership.md",
+          "chunk_id": "OT-03-P05",
+          "text": "OrbitPlus extends the unopened-device return window from 30 to 45 calendar days for eligible purchases made while membership is active. It does not extend the 14-day opened-device window, override hygiene exclusions, or extend a product warranty. Members may receive a loaner during some covered repairs under `07_repair_and_technical_support.md`, subject to availability and a refundable deposit.",
+          "score": 9.667315
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "V07",
+      "question": "My unopened device order was placed on August 25, 2026, but delivery was September 10. Which return window applies, and does it count from my order date or delivery?",
+      "actual_answer": "For your unopened device order placed on August 25, 2026, Return Policy version 1.0 applies, allowing 21 calendar days for unopened devices. While the triggering event for return-policy eligibility is the order-placement date, the number of return days is counted from confirmed delivery.",
+      "retrieved_contexts": [
+        {
+          "source_doc": "09_escalation_and_policy_updates.md",
+          "chunk_id": "OT-09-P03",
+          "text": "Policy documents display a version and effective date. Unless a new version explicitly says otherwise, the version in force on the triggering event date controls. For return-policy eligibility, the triggering event is the order-placement date, while the number of return days is counted from confirmed delivery. For warranty, the coverage period begins on delivery or store collection. For repair fees, the applicable policy is the version accepted when the repair authorization is created.",
+          "score": 27.851891
+        },
+        {
+          "source_doc": "09_escalation_and_policy_updates.md",
+          "chunk_id": "OT-09-P04",
+          "text": "Return Policy version 1.0 applies to orders placed before September 1, 2026. It allowed 21 calendar days for unopened devices, seven calendar days for opened devices, and charged a 15% opened-device restocking fee. Return Policy version 2.0 applies to orders placed on or after September 1, 2026. It allows 30 days unopened, 14 days opened, and charges 10%. The 45-day OrbitPlus unopened-device benefit was introduced with version 2.0. Orders placed before September 1 keep the 21-day version 1.0 window regardless of membership. For version 2.0 orders, the extension applies only when OrbitPlus was active on the order date.",
+          "score": 22.109177
+        },
+        {
+          "source_doc": "05_returns_and_exchanges.md",
+          "chunk_id": "OT-05-P01",
+          "text": "For orders placed on or after September 1, 2026, an unopened standard device may be returned within 30 calendar days after confirmed delivery. An opened standard device may be returned within 14 calendar days and is subject to a 10% restocking fee. A defective device verified during the return window is not charged a restocking fee. OrbitPlus may extend only the unopened-device window as described in `03_promotions_and_membership.md`.",
+          "score": 20.071767
+        },
+        {
+          "source_doc": "00_system_scope.md",
+          "chunk_id": "OT-00-P06",
+          "text": "When a policy depends on a date, the version applicable to the order or service event controls. The policy-version rules are defined in `09_escalation_and_policy_updates.md`.",
+          "score": 10.496467
+        },
+        {
+          "source_doc": "04_shipping_and_delivery.md",
+          "chunk_id": "OT-04-P05",
+          "text": "If a carrier confirms loss, OrbitTech offers either a replacement, subject to stock, or a refund to the original payment methods. Express-shipping fees are refunded when an express package arrives after the carrier's committed service date, unless the delay resulted from an incorrect address, unavailable recipient, customs hold, severe weather, or another listed carrier exception. Address-change limitations are in `02_orders_and_payments.md`.",
+          "score": 7.836537
+        }
+      ],
+      "error": null
+    }
+  ]
+}

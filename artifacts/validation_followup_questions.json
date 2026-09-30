@@ -1,0 +1,8 @@
+{
+  "corpus_id": "orbittech-customer-support-v1",
+  "purpose": "Check the missing window-start detail found in V04; V07 is a fresh date variation after that fix.",
+  "qa_pairs": [
+    {"id": "V04", "question": "I placed an order on August 20, 2026 and received the unopened device on September 2. Can I use the 30-day return policy, and when does the window start?"},
+    {"id": "V07", "question": "My unopened device order was placed on August 25, 2026, but delivery was September 10. Which return window applies, and does it count from my order date or delivery?"}
+  ]
+}

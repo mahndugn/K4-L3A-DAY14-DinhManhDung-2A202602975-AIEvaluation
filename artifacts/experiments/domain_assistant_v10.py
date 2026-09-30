@@ -35,7 +35,7 @@ STOPWORD_TEXT = (
 )
 STOPWORDS = frozenset(STOPWORD_TEXT.split())
 SOURCE_REPEAT_DECAY = 0.9
-PROMPT_VERSION = "1.10"
+PROMPT_VERSION = "1.9"
 ProgressCallback = Callable[[str], None]
 
 
@@ -189,10 +189,6 @@ def _retrieval_query(question: str) -> Counter[str]:
         query.update(_tokenize("cancel confirmed account page"))
     if "orbitplus" in lower and re.search(r"\b(cost|benefits)\b", lower):
         query.update(_tokenize("annual membership"))
-    if ("return" in lower
-            and re.search(r"\b(order|placed|policy)\b", lower)
-            and re.search(r"\b(20\d\d|version|start|count)\b", lower)):
-        query.update(_tokenize("policy version triggering event date confirmed delivery counted"))
     return query
 
 
